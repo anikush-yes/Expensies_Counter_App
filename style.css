@@ -1,0 +1,144 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;  /* Tai užtikrina, kad viskas bus centrinta */
+    justify-content: center;  /* Horizontalus centravimas */
+    align-items: center;  /* Vertikalus centravimas */
+    background-image: url('images/Sofija_balerina.jpg');
+    background-size: 541px auto;
+    background-position: center; /* Centruoja vaizdą */
+    background-repeat: no-repeat; /* Neleidžia kartotis */
+    background-color: black;
+    height: 100vh;  /* Užtikrina, kad vaizdas užims visą ekraną */
+    border-radius: 2%;
+}
+
+
+
+/* Stilius, skirtas vaizdo elementui */
+/* .image-container img {
+    width: 400px;
+    height: 200px;
+    animation: cold 3ms infinite alternate;
+    animation-delay: 5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-bottom: 100px;
+    border-radius: 8px;
+} */
+
+/* Skaičiuoklės dizainas virš fono */
+.container {
+    background-color: rgba(91, 165, 255, 0.5);  /* Šviesus permatomas fonas su 80% opacity */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;  /* Kad būtų virš uždango */
+    z-index: 2;  /* Kad forma būtų virš uždangalų */
+    width: 540px;
+    height: 990px;
+   
+    overflow-y: auto;  /* Leidžia scrollinti, jei sąrašas ilgas */
+}
+
+/* Antraštės stilius */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Formos laukų ir mygtuko stiliai */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 99.5%;
+    padding: 10px;
+    background-color: #4c6daf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Išlaidų sąrašo stilius */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Stilius redagavimo ir trinimo mygtukams */
+li button {
+    background-color: #4c6daf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #45a049;
+}
+
+/* Papildomi stiliai mygtukams */
+button:focus, li button:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px rgba(76, 109, 175, 0.8);
+}
+
+/* Atnaujintas bendras įvedimo laukų ir sąrašo išvaizda */
+input:focus {
+    border-color: #4c6daf;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 109, 175, 0.5);
+}
+
+/* Skrolinimas sąraše */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

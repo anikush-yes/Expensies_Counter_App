@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Išlaidų skaičiuoklė</title>
+</head>
+
+<body>
+
+    <!-- <div class="image-container">
+        <img src="img/Sofija_balerina.jpg" alt="Sofija balerina">
+    </div> -->
+
+    <div class="container">
+        
+
+        <h1>Sofijos LTBA išlaidų skaičiuoklė lapkričio likutis + gruodis</h1>
+
+        <label for="expense-name">Išlaidos pavadinimas:</label>
+        <input type="text" id="expense-name" placeholder="Pavadinimas">
+
+        <label for="expense-amount">Kaina (€):</label>
+        <input type="number" id="expense-amount" placeholder="Kaina">
+
+        <button id="add-expense">Pridėti išlaidą</button>
+
+        <h2>Bendros išlaidos: <span id="total-amount">0</span> €</h2>
+
+        <!-- Išlaidų sąrašas su redagavimo ir trinimo mygtukais -->
+        <ul id="expense-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
